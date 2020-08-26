@@ -1,0 +1,73 @@
+html {
+  display: flex;
+  justify-content: space-around;
+
+  background-color: darkgray;
+  
+  font-family: "Lucida Console", Monaco, monospace;
+  line-height: 19px;
+}
+  
+body {
+  color: yellow;
+  border: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 60vh;
+  box-shadow: 1px 10px 10px 5px grey;
+  margin-top: 20px;
+}
+
+a {
+  color: lightblue;
+}
+
+p {
+  color: beige;
+}
+
+header {
+  font-family: Verdana, Geneva, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  color: black;
+  background-color: white;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(208,208,208,1) 100%);
+  border-bottom: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+article {
+  height: 100%;
+  padding-right: 5px;
+}
+
+section {
+  background-color: black;
+  overflow-y: auto;
+}
+
+.date {
+  color: cyan;
+}
+
+#terminal {
+  height: 100%;
+  padding: 5px;
+  padding-right: 0px;
+  border: 1px white solid;
+  border-top: 0px;
+}
+
+@keyframes toggle {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+#cursor {
+  animation: toggle 1.5s infinite;
+}

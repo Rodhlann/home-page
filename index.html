@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="terminal.css" />
+    <title>Stdout...</title>
+  </head>
+
+
+  <script>
+    function setDate() {
+      document.querySelectorAll('.date')
+        .forEach(el => el.innerHTML = `[${new Date().toDateString()}]`);
+    }
+  </script>
+
+  <body onload="setDate()">
+    <header>
+      <div>~/timpepper.dev/blog</div>
+    </header>
+
+    <section id="terminal">
+      <article>
+        <div>~/timpepper.dev/blog <span class="date">[Tue Aug 25 2020]</span></div>
+        <div>$&nbsp;ls</div>
+         
+        <p>&nbsp;<a href="./intro.html">intro.txt</a></p>
+
+        <div>~/timpepper.dev/blog <span class="date">[Tue Aug 25 2020]</span></div>
+        <div>$&nbsp;<span id="cursor">&block;</span></div>
+      </article>
+    </section>
+  </body>
+
+</html>
